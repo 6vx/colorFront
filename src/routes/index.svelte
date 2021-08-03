@@ -1,7 +1,6 @@
 <script>
     let colorApiUrl = "https://ykk1jsg6ch.execute-api.us-west-2.amazonaws.com/jsonReplyHopefully?"
     let synonymApiUrl = "https://api.datamuse.com/words?ml="
-
     let searchTerm="COLOR";
     let bingbong = []
     let bongbing = ""
@@ -94,6 +93,12 @@
 
 </script>
 
+<svelte:head>
+     <title>colorAPI</title>
+</svelte:head>
+
+
+
 
 <h1 id="{bongbing}">
     colorAPI
@@ -102,7 +107,7 @@
 <input id="{bongbing}" bind:value="{searchTerm}" type="text"><button on:click="{handleClick}">check</button>
 
 <p>
-    find color in text quickly and easily
+    find magical color in text quickly and easily
 </p>
 
 <!-- {#await promise then value}
